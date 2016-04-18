@@ -1,0 +1,49 @@
+1) The system Requires Java 8(Tested on Java 8_u65)
+
+2) Tools Required
+    a) Stanford CoreNLP
+        Link: http://nlp.stanford.edu/software/stanford-corenlp-full-2015-04-20.zip
+        
+    
+    b) Stanford Lex-Parser
+        Link: http://nlp.stanford.edu/software/stanford-parser-full-2014-08-27.zip
+        
+    
+    c) Stanford POS Tagger        
+        Link: http://nlp.stanford.edu/software/stanford-postagger-2014-08-27.zip
+        Jar Files to be added to CLASSPATH:
+
+    d) Rita Wordnet    
+        http://rednoise.org/rita/rita.zip
+
+    e) Wordnet
+        Included in the Archive        
+3) Add the fallowing jar files to the java CLASSPATH
+    
+            JAR FILE                                From the Archive
+            
+   a)stanford-corenlp-3.5.2.jar             stanford-corenlp-full-2015-04-20.zip
+   b)stanford-corenlp-3.5.2-models.jar      stanford-corenlp-full-2015-04-20.zip
+   c)stanford-parser.jar                    stanford-parser-full-2014-08-27.zip
+   d)stanford-parser-3.4.1-models.jar       stanford-parser-full-2014-08-27.zip
+   e)stanford-parser-3.4.1-sources.jar      stanford-parser-full-2014-08-27.zip
+   f)stanford-postagger.jar                 stanford-postagger-2014-08-27.zip
+   g)stanford-postagger-3.4.1.jar           stanford-postagger-2014-08-27.zip
+   h)stanford-postagger-3.4.1-sources.jar   stanford-postagger-2014-08-27.zip
+   i)rita.jar                               rita.zip
+   
+4)To add jar files to the classpath in Linux/Unix
+    a) Open the Terminal
+    b) Change the relative path in the fallowing command and run
+         export CLASSPATH=$CLASSPATH:/PATH/TO/JAR/FILE/rita.jar:/PATH/TO/JAR/FILE/stanford-corenlp-3.5.2.jar:/PATH/TO/JAR/FILE/stanford-corenlp-3.5.2-models.jar:/PATH/TO/JAR/FILE/stanford-parser.jar:/PATH/TO/JAR/FILE/stanford-parser-3.4.1-models.jar:/PATH/TO/JAR/FILE/stanford-parser-3.4.1-sources.jar:/PATH/TO/JAR/FILE/stanford-postagger.jar:/PATH/TO/JAR/FILE/stanford-postagger-3.4.1.jar:/PATH/TO/JAR/FILE/stanford-postagger-3.4.1-sources.jar
+         
+5) Change the working directory to the project folder.
+
+6) Compile the Runner.java using "javac Runner.java".
+
+7) Execute the Runner class using either of the fallowing ways.
+    a) java Runner input.txt
+        It will give the output as which class the article belong to
+    b) java Runner
+        It will give the accuracy levels on test set(It will take few minutes to complete)
+8) Sample input files can be found in "input" folder.
